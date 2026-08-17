@@ -9,10 +9,11 @@ function EventItems(props) {
         year: numeric,
     });
     const formattedAddress = location.replace(', ', '\n')
+    const exploreLink = `/events/${id}`
 
     return (
         <li>
-            <img src="" alt="" />
+            <img src={'/' + image} alt={title} />
             <div>
                 <div>
                     <h2>{title}</h2>
