@@ -16,18 +16,20 @@ function EventItems(props) {
     return (
         <li className={classes.item}>
             <img src={'/' + image} alt={title} />
-            <div>
-                <div>
-                    <h2>{title}</h2>
+            <div className={classes.content}>
+                <div className={classes.summary}>
                     <div>
-                        <time>{date}</time>
+                        <h2>{title}</h2>
+                        <div>
+                            <time>{date}</time>
+                        </div>
+                        <div>
+                            <address>ADDRESS</address>
+                        </div>
                     </div>
-                    <div>
-                        <address>ADDRESS</address>
+                    <div className={classes.address}>
+                        <Link href="/">Explore Event</Link>
                     </div>
-                </div>
-                <div>
-                    <Link href="/">Explore Event</Link>
                 </div>
             </div>
         </li>
